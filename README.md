@@ -1,8 +1,6 @@
 # 💫 About Me:
-🔭 I'm current learning  web development & practising DSA
-👨‍💻 My social media handle https://www.linkedin.com/in/vanshmehandru
-📫 How to reach me vm9157@srmist.edu.in
-⚡ Fun fact I love to interact with people
+🔭 I’m currently learning web development & practising DSA<br><br>👨‍💻 My social media handle https://www.linkedin.com/in/vanshmehandru<br><br>📫 How to reach me vm9157@srmist.edu.in<br><br>⚡ Fun fact I love to interact with people
+
 
 
 
