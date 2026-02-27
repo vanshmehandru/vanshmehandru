@@ -1,15 +1,22 @@
 
-<h1 align="center">
+<h3 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hey+There!+👋;+Myself+Vansh+Mehandru!;" />
-</h1>
-
-<h3 align="center">A passionate software developer from India</h3>
+</h3>
+<div align="center"><h2>👨‍💻 About Me 👨‍💻</h2></div>
 
 <br/>
 
-<div align="center">
+<div>
  
- 🔭 I’m currently learning web development & practising DSA<br><br>👨‍💻 My social media handle https://www.linkedin.com/in/vanshmehandru<br><br>📫 How to reach me vm9157@srmist.edu.in<br><br>⚡ Fun fact I love to interact with people
+ I began my journey as a full stack web developer, focusing on building clean, scalable web applications.
+
+Currently, I’m exploring the integration of AI/ML into modern applications, with a growing interest in Agentic AI systems — building software that doesn’t just respond, but can reason and act intelligently.
+
+What Drives Me : <br/>
+Build thoughtfully.
+Learn continuously.
+Improve with every project.
+<br/><br/>
 
  </div>
  
@@ -32,15 +39,6 @@
 </div>
 
 <br/>
-<hr/>
-
-<div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
-  
-  <br/><br/><br/>
-</div>
 
 <hr/>
 
@@ -56,7 +54,11 @@
 <br/>
 
 <hr/>
+<div align="center"><h2>🚀 Current Focus 🚀</h2></div> 
 
+- AI + Full Stack Integration
+- Data Structures & Algorithms
+- Backend Architecture
 
-<br/>
+  
 
