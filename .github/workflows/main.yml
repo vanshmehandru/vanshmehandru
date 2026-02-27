@@ -4,16 +4,20 @@ name: Generate Snake
 # Controls when the action will run.
 on:
   schedule:
-      # every 12 hours
+      # Run automatically every 12 hours
     - cron: "0 */12 * * *"
 
-  # This command allows us to run the Action automatically from the Actions tab.
+  # Allows manual run from the Actions tab
   workflow_dispatch:
   
-  # Also run on every push on the master branch
+  # Also run on every push on the main branch
   push:
     branches:
-    - main
+      - main
+
+# 🔥 IMPORTANT: Give GitHub Actions permission to push to the repository
+permissions:
+  contents: write
 
 # The sequence of runs in this workflow:
 jobs:
@@ -24,29 +28,42 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Step 1: Checkout your repository code
       - name: Clone repo
         uses: actions/checkout@v3
     
+      # Step 2: Generate the snake animation files inside './dist/'
       - name: Generate the snake files in './dist/'
         uses: Platane/snk@v3
         id: snake-gif
         with:
+          # Automatically detects your GitHub username
           github_user_name: ${{ github.repository_owner }}
           outputs: |
+            # Light theme SVG
             dist/github-contribution-grid-snake.svg
+            # Dark theme SVG
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            # Animated GIF version
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Required authentication token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Step 3: Show git status (for debugging)
       - name: Show build status
         run: git status
 
+      # Step 4: Push generated files to the 'output' branch
       - name: Push new files to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
+          # Branch where snake files will be stored
           target_branch: output
+          # Folder containing generated files
           build_dir: dist
+          # Commit message for auto push
           commit_message: Update snake animations
         env:
+          # Required token for pushing changes
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
